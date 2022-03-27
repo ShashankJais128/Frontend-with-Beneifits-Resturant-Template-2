@@ -1,0 +1,26 @@
+{
+  "name": "frontend-with-beneifits-resturant-template-2",
+  "version": "1.0.0",
+  "description": "You may view the template here: https://elixir14082002.github.io/Restaurant-Template/",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShashankJais128/Frontend-with-Beneifits-Resturant-Template-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShashankJais128/Frontend-with-Beneifits-Resturant-Template-2/issues"
+  },
+  "homepage": "https://github.com/ShashankJais128/Frontend-with-Beneifits-Resturant-Template-2#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "vite": "^2.8.6"
+  }
+}

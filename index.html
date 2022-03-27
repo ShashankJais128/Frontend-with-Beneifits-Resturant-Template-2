@@ -1,89 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Restaurant-Template</title>
+    <title>Vintage - Restro Bar</title>
 </head>
-
 <body>
-    <!--This contains the navbar with all the nav items and the search bar-->
-    <div id="navbar">
-        <div id="logo">LOGO</div>
-        <div id="navbar-options">
-            <span class="options">HOME</span>
-            <span class="options">SERVICE</span>
-            <span class="options">CONTACTS</span>
-            <span class="options">ABOUT</span>
-            <span id="user"></span>
+    <!-- navbar goes here -->
+    <nav class="bg-[#00000094] fixed w-[100vw]">
+        <div class="mx-auto px-10">
+        <div class="flex justify-between">
+    
+            <div class="flex">
+            <!-- logo -->
+            <div>
+                <a href="/" class="flex items-center px-2">
+                <img class="w-20" src="img/VINTAGElogo.png" alt="">
+                </a>
+            </div>
+            </div>
+            <!-- primary nav -->
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="/" class="py-5 px-3 active:font-bold text-lg text-white hover:underline hover:underline-offset-1">Home</a>
+                <a href="#About" class="py-5 px-3 text-lg text-white hover:underline hover:underline-offset-1">About Us</a>
+                <a href="#Menu" class="py-5 px-3 text-lg text-white hover:underline hover:underline-offset-1">Menu</a>
+                <a href="#Gallery" class="py-5 px-3 text-lg text-white hover:underline hover:underline-offset-1">Gallery</a>
+                <a href="#Testimonials" class="py-5 px-3 text-lg text-white hover:underline hover:underline-offset-1">Testimonials</a>
+                <a href="#Contact" class="py-5 px-3 text-lg text-white hover:underline hover:underline-offset-1">Contact Us</a>
+            </div>
         </div>
-        <font size="12" id="vintage-name">VINTAGE</font>
-        <div id="search-box">
-            <input type="text" placeholder="Search:">
         </div>
-    </div>
-    <!--This contains the imporatnt price cards-->
-    <div class="sections">
-        <section class="priceCards">
-            <div class="priceCards__title">
-                <font size="10" color="#495371">Our Specialities</font>
-                <br><br>
-                <center>
-                    <hr width="20%">
-                </center>
-            </div>
-            <!--The first row that contains the first 3 price cards-->
-            <div class="priceCards__row1 row">
-                <div class="priceCards__cards">
-                    <!--The price cards contain card image, the name of the dish along with its price-->
-                    <img class="card__image" src="photo1.avif" alt="photo1">
-                    <div class="card__content">
-                        <font size="6" color="#495371">Steak</font>
-                        <font size="3">&#x20B9; 250</font>
-                    </div>
-                </div>
-                <div class="priceCards__cards">
-                    <img class="card__image" src="photo2.avif" alt="photo2">
-                    <div class="card__content">
-                        <font size="6" color="#495371">Legume</font>
-                        <font size="3">&#x20B9; 150</font>
-                    </div>
-                </div>
-                <div class="priceCards__cards">
-                    <img class="card__image" src="photo3.avif" alt="photo3">
-                    <div class="card__content">
-                        <font size="6" color="#495371">Salad</font>
-                        <font size="3">&#x20B9; 200</font>
-                    </div>
-                </div>
-            </div>
-            <!--The second row that contains the second 2 price cards-->
-            <div class="priceCards__row2 row">
-                <div class="priceCards__cards">
-                    <img class="card__image" src="photo4.avif" alt="photo4">
-                    <div class="card__content">
-                        <font size="6" color="#495371">Halwa</font>
-                        <font size="3">&#x20B9; 250</font>
-                    </div>
-                </div>
-                <div class="priceCards__cards">
-                    <img class="card__image" src="photo5.avif" alt="photo4">
-                    <div class="card__content">
-                        <font size="6" color="#495371">Pizza</font>
-                        <font size="3">&#x20B9; 399</font>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--This is the footer section-->
-        <footer class="footer">
-            <a href="#" class="footer__content">Footer</a>
-            <span class="footer__uparraow"><a href="#" class="footer__content">UP</a></span>
-        </footer>
-    </div>
-</body>
+    </nav>
 
+    <!-- content goes here -->
+    <div class="text-center flex flex-col items-center h-[100vh] bg-[url('img/home.jpg')] bg-contain py-24"> 
+        <h2 class="font-extrabold text-6xl bg-[#342f60] p-2 my-10 w-fit text-white rounded-lg shadow-black shadow-2xl">Vintage Restro Bar</h2>
+        <input class="rounded-full w-1/3 my-20 px-4 py-1 border-4 border-[#342f60] text-lg shadow-black shadow-2xl" type="text" placeholder="Search here...">
+    </div>
+
+    <div class="h-[100vh] py-24 bg-[#342f60]" id="About">
+        <div class="bg-yellow-400 p-8 mx-36 shadow-black shadow-2xl">
+            <h1 class="text-center text-4xl font-bold text-white">About Us</h1>
+            <p class="text-justify mx-8 my-10 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita minus necessitatibus quibusdam assumenda iure cupiditate est perferendis quis consequatur in saepe totam reiciendis nobis, iusto officia, blanditiis sunt optio deleniti maxime, animi illum. Tempora pariatur exercitationem maiores quibusdam ipsam possimus incidunt adipisci fuga reiciendis voluptatibus nobis cupiditate amet commodi est eveniet quam velit vero nemo consectetur dolorum nam excepturi, alias deleniti? Temporibus nihil aliquid repellendus excepturi optio recusandae saepe facilis similique odio? Tenetur totam nemo cupiditate enim similique mollitia laudantium pariatur odio incidunt doloribus voluptas provident perferendis sapiente itaque harum iusto fugit nihil veniam corporis tempore necessitatibus, ad deserunt ex. Animi, quae esse veritatis ipsam consequatur fugit non ab voluptates illo quasi accusamus placeat aliquam corporis doloribus porro rerum, iste at explicabo magnam enim quas molestiae! Cum veritatis iure, reiciendis rerum dolore eligendi eveniet libero ut at eius! Quis, quia unde animi iusto maiores sint magni ex laborum repudiandae perferendis ea maxime? Adipisci amet, quis laudantium excepturi nisi atque numquam itaque impedit assumenda non molestiae cupiditate sit recusandae perferendis omnis eius magnam similique quisquam eos fuga vero, porro a! Odio laudantium porro saepe debitis, numquam velit hic, ab quam distinctio ratione amet. Culpa eos illum, earum asperiores, perferendis repellat laborum quidem blanditiis libero, numquam ipsa qui obcaecati et facere est assumenda. Doloribus itaque eaque quidem qui natus magni molestias laboriosam illo sed dicta voluptatum tempore atque nihil vel, fugit at optio consequatur totam? Impedit ea consectetur, quia exercitationem accusantium consequuntur cum totam? Amet dolorem perferendis quidem optio officia cumque ut, illum expedita, in dolores temporibus enim distinctio aspernatur corporis eligendi natus fugiat totam aliquid minus ratione? Nesciunt voluptatem voluptates veniam delectus error adipisci provident, cumque repellat quibusdam quia reiciendis eum.</p>
+        </div>
+    </div>
+
+    <div class="py-24 h-[100vh] bg-yellow-400" id="Menu">
+        <h1 class="text-center text-4xl font-bold text-white">Menu</h1>
+        <div class="grid grid-cols-3 p-8 mx-32 space-x-8">
+            <div class="text-center mt-8 bg-[#342f60] shadow-black shadow-2xl">
+                <img class="p-2 h-full " src="img/menu1.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 bg-[#342f60] shadow-black shadow-2xl">
+                <img class="p-2 h-full" src="img/menu2.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 bg-[#342f60] shadow-black shadow-2xl">
+                <img class="p-2 h-full" src="img/menu3 (2).jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="py-24 h-[100vh] bg-[#342f60]" id="Gallery">
+        <h1 class="text-center text-4xl font-bold mb-8 text-white">Gallery</h1>
+        <div class="flex flex-wrap p-4 mx-32 space-x-8">
+            
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full" src="img/p1.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full" src="img/p2.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full " src="img/p3.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full" src="img/p4.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full " src="img/p5.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full" src="img/p6.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full " src="img/p7.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] last:only: bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full" src="img/p8.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full " src="img/p9.jpg" alt="">
+            </div>
+            <div class="text-center mt-8 w-[200px] h-[150px] bg-yellow-400 shadow-black shadow-xl">
+                <img class="p-2 h-full w-full" src="img/p10.jpg" alt="">
+            </div>      
+        </div>
+    </div>
+
+    <div class="py-24 h-[100vh] bg-yellow-400" id="Testimonials">
+        <h1 class="text-center text-4xl font-bold mb-16 text-white">Testimonials</h1>
+        <div class="flex flex-wrap items-center justify-center space-x-8 -m-4">
+            <div class="p-4 md:w-1/3 w-full">
+              <div class="h-full bg-gray-100 p-8 shadow-black shadow-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas reprehenderit eius doloribus alias officiis ipsum similique sunt voluptatum doloremque eum numquam, fuga sit quia repellat veniam quod id? Quae?</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="img/ppl1.avif" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium">Ram Prasad</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 w-full">
+                <div class="h-full bg-gray-100 p-8 shadow-black shadow-2xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                  </svg>
+                  <p class="leading-relaxed mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas reprehenderit eius doloribus alias officiis ipsum similique sunt voluptatum doloremque eum numquam, fuga sit quia repellat veniam quod id? Quae?</p>
+                  <a class="inline-flex items-center">
+                    <img alt="testimonial" src="img/ppl1.avif" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                    <span class="flex-grow flex flex-col pl-4">
+                      <span class="title-font font-medium">Ram Prasad</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <div class="py-24 h-[100vh] bg-[#342f60]" id="Contact">
+        <h1 class="text-center text-4xl font-bold text-white">Contact Us</h1>
+        <div class="flex p-4 mx-32 mt-8 justify-between">
+            <div class="w-1/3">
+                <img src="img/VINTAGElogo.png" alt="">
+            </div>
+            <div class="bg-yellow-400 m-8 p-8 w-1/3 shadow-black shadow-2xl">
+                <p class="text-3xl font-semibold">Address</p>
+                <p class="text-xl">Krishna Plaza, 3rd floor, Nayapalli, Bhubaneswar, Odisha 751012</p>
+                <p class="text-3xl font-semibold">Phone</p><br>
+                <p class="text-xl">9999999999</p><br><br>
+                <div class="flex space-x-8">
+                    <a href="https://www.zomato.com/bhubaneswar/vintage-restro-cafe-nayapalli-bhubaneshwar" target="_blank"><img class="w-[30px] rounded-full" src="img/zomato.png" alt=""></a>
+                    <a href="https://instagram.com/vintagerestrobar?" target="_blank"><img class="w-[30px] rounded-full" src="img/insta.jpg" alt=""></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
